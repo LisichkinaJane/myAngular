@@ -1,0 +1,8 @@
+.todo-list{
+	width: 500px;
+	border:1px solid red;
+}
+h1{
+	font-family: Arial, Sans-Serif, Tahoma;
+	color:red;
+}
