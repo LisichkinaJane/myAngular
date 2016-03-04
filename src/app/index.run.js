@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('260216')
+    .module('myAngular')
     .run(runBlock);
 
   /** @ngInject */

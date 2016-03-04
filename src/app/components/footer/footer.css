@@ -1,0 +1,7 @@
+.footer-wrapper li{
+	display: inline-block;
+}
+/*.footer-wrapper li::after{
+	content:"check me";
+	color: black;
+}*/
