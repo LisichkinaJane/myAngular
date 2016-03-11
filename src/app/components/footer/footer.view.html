@@ -1,7 +1,16 @@
-<ul class="footer-wrapper">
-  <li><input type="radio" value="all" class="btn btn-default" name="active-filter" ng-model = "main.activeFilter">All
-  </li>
-  <li><input type="radio" value="done" class="btn btn-default" name="active-filter" ng-model = "main.activeFilter">Done</li>
-  <li><input type="radio" value="active" class="btn btn-default" name="active-filter" ng-model = "main.activeFilter">active</li>
-</ul>
-{{main.activeFilter}}
+<footer id="footer" ng-show="vm.items.length">
+    <span id="todo-count"><strong>{{vm.remainingCount}} left</strong>
+  </span>
+    <ul id="filters">
+        <li>
+            <a ng-class="{selected: vm.status == ''} " ng-click="vm.changeFilter('')">All</a>
+        </li>
+        <li>
+            <a ng-class="{selected: vm.status == 'active'}" ng-click="vm.changeFilter('active')">Active</a>
+        </li>
+        <li>
+            <a ng-class="{selected: vm.status == 'completed'}" ng-click="vm.changeFilter('completed')">Completed</a>
+        </li>
+    </ul>
+    <button id="clear-completed" ng-click="vm.clearCompleted()" ng-show='vm.completedCount'>Clear completed</button>
+</footer>

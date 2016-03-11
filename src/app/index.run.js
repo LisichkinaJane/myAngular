@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('myAngular')
+    .module('levelUpAngular')
     .run(runBlock);
 
   /** @ngInject */

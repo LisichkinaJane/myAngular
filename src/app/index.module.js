@@ -1,7 +1,6 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('myAngular', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'toastr']);
-
+    angular
+        .module('levelUpAngular', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria']);
 })();
