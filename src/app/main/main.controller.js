@@ -17,7 +17,7 @@
       },
       {
         name: "Second",
-        completed: true,
+        completed: false,
         id: 1
       }
     ];
@@ -56,7 +56,7 @@
 
     vm.changeFilter = function (filter) {
       vm.status = filter;
-
+debugger
       vm.statusFilter = (vm.status === 'active')
         ? { completed: false }
         : (vm.status === 'completed')
@@ -72,6 +72,7 @@
 
         }
         vm.toggleCompleted();
+        
       });
     };
 
